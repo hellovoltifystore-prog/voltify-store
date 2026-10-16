@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voltify | Next-Gen Mobile Gear</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#00D2FF',
+                            electric: '#0066FF',
+                            dark: '#080D18',
+                            card: '#0F172A',
+                            border: '#1E293B'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .neon-glow:hover {
+            box-shadow: 0 0 25px rgba(0, 210, 255, 0.3);
+            border-color: rgba(0, 210, 255, 0.5);
+        }
+        .text-glow {
+            text-shadow: 0 0 16px rgba(0, 210, 255, 0.5);
+        }
+        .hero-logo-glow {
+            filter: drop-shadow(0 0 35px rgba(0, 210, 255, 0.45));
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-slate-100 font-sans antialiased selection:bg-brand-cyan selection:text-black">
+
+    <!-- Navigation Bar with 3D Logo -->
+    <nav class="sticky top-0 z-40 bg-brand-dark/90 backdrop-blur-md border-b border-brand-border">
+        <div class="max-w-6xl mx-auto px-5 py-3 flex justify-between items-center">
+            
+            <!-- Voltify Logo Brand -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <img src="logo.png" alt="Voltify Logo" class="w-10 h-10 rounded-full object-cover transition-transform duration-300 group-hover:scale-110 drop-shadow-[0_0_10px_rgba(0,210,255,0.5)]">
+                <span class="text-2xl font-black tracking-tight text-white group-hover:text-brand-cyan transition duration-300">
+                    Volt<span class="text-brand-cyan">ify</span>
+                </span>
+            </a>
+
+            <a href="#products" class="text-xs uppercase tracking-wider font-bold px-5 py-2 rounded-full border border-brand-border hover:border-brand-cyan hover:text-brand-cyan transition duration-300">
+                Explore Gear
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Featured 3D Logo -->
+    <section class="max-w-6xl mx-auto px-5 pt-12 pb-20 text-center relative">
+        <!-- Floating 3D Emblem Showcase -->
+        <div class="flex justify-center mb-6">
+            <div class="relative">
+                <div class="absolute -inset-4 bg-brand-cyan/20 rounded-full blur-2xl animate-pulse"></div>
+                <img src="logo.png" alt="Voltify Emblem" class="w-28 h-28 md:w-36 md:h-36 rounded-full relative hero-logo-glow transition-transform duration-500 hover:scale-105">
+            </div>
+        </div>
+
+        <div class="inline-flex items-center space-x-2 mb-4 px-4 py-1.5 rounded-full border border-brand-cyan/30 bg-brand-cyan/10 text-brand-cyan text-xs font-bold tracking-widest uppercase">
+            <span>⚡ Ultra-Fast Power & Premium Sound</span>
+        </div>
+        <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-6 leading-tight">
+            Level Up Your Mobile <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-500 text-glow">
+                Performance.
+            </span>
+        </h1>
+        <p class="max-w-xl mx-auto text-slate-400 text-sm md:text-base mb-8">
+            High-output fast chargers, rugged braided cables, and studio-clarity earbuds. Islandwide Cash on Delivery with full replacement warranty.
+        </p>
+        <div class="flex justify-center gap-4">
+            <a href="#products" class="bg-brand-cyan text-black font-extrabold px-8 py-3.5 rounded-xl hover:bg-white transition duration-300 shadow-lg shadow-brand-cyan/25 transform hover:-translate-y-0.5">
+                Shop Best Sellers
+            </a>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="border-y border-brand-border bg-brand-card/50 py-5">
+        <div class="max-w-5xl mx-auto px-5 grid grid-cols-2 md:grid-cols-3 gap-4 text-center text-xs tracking-wider uppercase font-semibold text-slate-300">
+            <div>🚀 24 - 48H Express Delivery</div>
+            <div>🛡️ Checking Warranty Guaranteed</div>
+            <div class="col-span-2 md:col-span-1">💵 Cash on Delivery Available</div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="max-w-6xl mx-auto px-5 py-20">
+        <h2 class="text-2xl md:text-3xl font-black tracking-tight mb-10 text-center">
+            Trending <span class="text-brand-cyan">Tech Gear</span>
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Card 1 -->
+            <div class="bg-brand-card border border-brand-border rounded-2xl p-5 flex flex-col justify-between transition-all duration-300 neon-glow group">
+                <div>
+                    <div class="w-full h-48 bg-slate-900/80 rounded-xl mb-4 flex items-center justify-center relative border border-slate-800">
+                        <span class="text-slate-600 text-xs font-semibold uppercase tracking-widest">Product Image</span>
+                        <span class="absolute top-3 right-3 bg-red-500/20 text-red-400 border border-red-500/40 text-[10px] font-black px-2 py-0.5 rounded-full">POPULAR</span>
+                    </div>
+                    <h3 class="font-bold text-lg text-white group-hover:text-brand-cyan transition">Voltify 65W GaN Fast Charger</h3>
+                    <p class="text-slate-400 text-xs mt-1 mb-4 leading-relaxed">Dual Type-C ports with smart chip auto-power protection. 0 to 65% in 25 mins.</p>
+                </div>
+                <div class="pt-4 border-t border-brand-border flex items-center justify-between">
+                    <div>
+                        <span class="text-slate-500 line-through text-xs">LKR 4,500</span>
+                        <div class="text-brand-cyan font-black text-xl">LKR 3,450</div>
+                    </div>
+                    <button onclick="openOrderModal('Voltify 65W GaN Fast Charger', 3450)" class="bg-brand-cyan text-black font-bold px-4 py-2 rounded-lg text-xs hover:bg-white transition duration-200">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-brand-card border border-brand-border rounded-2xl p-5 flex flex-col justify-between transition-all duration-300 neon-glow group">
+                <div>
+                    <div class="w-full h-48 bg-slate-900/80 rounded-xl mb-4 flex items-center justify-center relative border border-slate-800">
+                        <span class="text-slate-600 text-xs font-semibold uppercase tracking-widest">Product Image</span>
+                    </div>
+                    <h3 class="font-bold text-lg text-white group-hover:text-brand-cyan transition">TitanBraided 100W PD Cable</h3>
+                    <p class="text-slate-400 text-xs mt-1 mb-4 leading-relaxed">Zinc alloy digital LED watt display cord. Unbreakable nylon military braid.</p>
+                </div>
+                <div class="pt-4 border-t border-brand-border flex items-center justify-between">
+                    <div>
+                        <span class="text-slate-500 line-through text-xs">LKR 2,200</span>
+                        <div class="text-brand-cyan font-black text-xl">LKR 1,650</div>
+                    </div>
+                    <button onclick="openOrderModal('TitanBraided 100W PD Cable', 1650)" class="bg-brand-cyan text-black font-bold px-4 py-2 rounded-lg text-xs hover:bg-white transition duration-200">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-brand-card border border-brand-border rounded-2xl p-5 flex flex-col justify-between transition-all duration-300 neon-glow group">
+                <div>
+                    <div class="w-full h-48 bg-slate-900/80 rounded-xl mb-4 flex items-center justify-center relative border border-slate-800">
+                        <span class="text-slate-600 text-xs font-semibold uppercase tracking-widest">Product Image</span>
+                    </div>
+                    <h3 class="font-bold text-lg text-white group-hover:text-brand-cyan transition">AeroPods Gaming ANC Earbuds</h3>
+                    <p class="text-slate-400 text-xs mt-1 mb-4 leading-relaxed">40ms ultra-low gaming latency, punchy deep bass, 32-hour combined battery.</p>
+                </div>
+                <div class="pt-4 border-t border-brand-border flex items-center justify-between">
+                    <div>
+                        <span class="text-slate-500 line-through text-xs">LKR 4,900</span>
+                        <div class="text-brand-cyan font-black text-xl">LKR 3,850</div>
+                    </div>
+                    <button onclick="openOrderModal('AeroPods Gaming ANC Earbuds', 3850)" class="bg-brand-cyan text-black font-bold px-4 py-2 rounded-lg text-xs hover:bg-white transition duration-200">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Order Modal -->
+    <div id="orderModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-brand-card border border-brand-border w-full max-w-md rounded-2xl p-6 relative">
+            <button onclick="closeOrderModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-lg">✕</button>
+            <h3 class="text-xl font-bold mb-1 text-white">Confirm Your Order</h3>
+            <p id="modalProductName" class="text-brand-cyan text-xs font-semibold mb-4"></p>
+            
+            <form id="orderForm" onsubmit="submitToWhatsApp(event)" class="space-y-4 text-sm">
+                <div>
+                    <label class="block text-slate-400 text-xs mb-1">Your Full Name</label>
+                    <input type="text" id="custName" required placeholder="Ex: Nimal Perera" class="w-full bg-slate-900 border border-brand-border rounded-lg px-3 py-2 text-white focus:outline-none focus:border-brand-cyan">
+                </div>
+                <div>
+                    <label class="block text-slate-400 text-xs mb-1">Delivery Address</label>
+                    <textarea id="custAddress" required rows="2" placeholder="Street, Town, District" class="w-full bg-slate-900 border border-brand-border rounded-lg px-3 py-2 text-white focus:outline-none focus:border-brand-cyan"></textarea>
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-slate-400 text-xs mb-1">Mobile No 1</label>
+                        <input type="tel" id="custPhone1" required placeholder="07X XXXXXXX" class="w-full bg-slate-900 border border-brand-border rounded-lg px-3 py-2 text-white focus:outline-none focus:border-brand-cyan">
+                    </div>
+                    <div>
+                        <label class="block text-slate-400 text-xs mb-1">Mobile No 2</label>
+                        <input type="tel" id="custPhone2" placeholder="07X XXXXXXX" class="w-full bg-slate-900 border border-brand-border rounded-lg px-3 py-2 text-white focus:outline-none focus:border-brand-cyan">
+                    </div>
+                </div>
+                <div class="p-3 bg-brand-dark rounded-lg border border-brand-border flex justify-between items-center text-xs">
+                    <span class="text-slate-400">Payment: <strong class="text-white">Cash on Delivery</strong></span>
+                    <span id="modalTotal" class="text-brand-cyan font-bold"></span>
+                </div>
+                <button type="submit" class="w-full bg-brand-cyan text-black font-extrabold py-3.5 rounded-xl hover:bg-white transition duration-300">
+                    ⚡ Complete Order via WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="border-t border-brand-border py-8 text-center text-xs text-slate-500">
+        <p>© 2026 Voltify Gear. Powered by Speed & Quality.</p>
+    </footer>
+
+    <script>
+        const SELLER_WHATSAPP_NUMBER = "94750190278"; 
+
+        let selectedProduct = "";
+        let selectedPrice = 0;
+
+        function openOrderModal(name, price) {
+            selectedProduct = name;
+            selectedPrice = price;
+            document.getElementById('modalProductName').innerText = `Item: ${name}`;
+            document.getElementById('modalTotal').innerText = `Total: LKR ${price} + Courier`;
+            document.getElementById('orderModal').classList.remove('hidden');
+        }
+
+        function closeOrderModal() {
+            document.getElementById('orderModal').classList.add('hidden');
+        }
+
+        function submitToWhatsApp(e) {
+            e.preventDefault();
+            const name = document.getElementById('custName').value;
+            const address = document.getElementById('custAddress').value;
+            const phone1 = document.getElementById('custPhone1').value;
+            const phone2 = document.getElementById('custPhone2').value || "None";
+
+            const message = `*--- NEW VOLTIFY ORDER ---*%0A`
+                + `*Item:* ${selectedProduct}%0A`
+                + `*Price:* LKR ${selectedPrice} (+ Courier)%0A`
+                + `*Payment:* Cash on Delivery%0A%0A`
+                + `*Customer Details:*%0A`
+                + `*Name:* ${name}%0A`
+                + `*Address:* ${address}%0A`
+                + `*Phone 1:* ${phone1}%0A`
+                + `*Phone 2:* ${phone2}`;
+
+            const url = `https://wa.me/${SELLER_WHATSAPP_NUMBER}?text=${message}`;
+            window.open(url, '_blank');
+            closeOrderModal();
+        }
+    </script>
+</body>
+</html>
